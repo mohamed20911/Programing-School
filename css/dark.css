@@ -1,0 +1,167 @@
+/* Start Dark-Light Mode */
+
+body {
+          background: #222;
+          color: white;
+}
+
+.header {
+          background-color: #333;
+          color: white;
+}
+
+.header .main-nav li a {
+          color: white;
+}
+
+.landing {
+          background-color: #333;
+          color: white;
+}
+
+.landing .container {
+          background-color: #333;
+          color: white;
+}
+
+.articles {
+          background-color: #333;
+          color: white;
+}
+
+.articles .box {
+          background-color: #333;
+          color: white;
+}
+
+.gallery {
+          background-color: #333;
+          color: white;
+}
+
+.gallery .box {
+          background-color: #333;
+          color: white;
+}
+
+.features {
+          background-color: #333;
+          color: white;
+}
+
+.features .box {
+          background-color: #333;
+          color: white;
+}
+
+.testimonials {
+          background-color: #333;
+          color: white;
+}
+
+.testimonials .box {
+          background-color: #333;
+          color: white;
+}
+
+.team {
+          background-color: #333;
+          color: white;
+}
+
+.team .box {
+          background-color: #333;
+          color: white;
+}
+
+.header .main-nav>li>a:hover {
+          color: var(--main-color);
+          background-color: #333;
+}
+
+.header .mega-menu .links li::before {
+          background-color: #222;
+}
+
+.header .mega-menu {
+          background-color: #222;
+}
+
+.work-steps {
+          background-color: #222;
+          color: white;
+}
+
+.work-steps .container {
+          background-color: #222;
+          color: white;
+}
+
+.work-steps .container .box {
+          background-color: #222;
+          color: white;
+}
+
+.work-steps .info .box::before {
+          background-color: #444;
+}
+
+.videos {
+          background-color: #222;
+          color: white;
+}
+
+.videos .container {
+          background-color: #222;
+          color: white;
+}
+
+.videos .holder {
+          background-color: #222;
+          color: white;
+}
+
+.videos .holder .list {
+          background-color: #222;
+          color: white;
+}
+
+.videos .holder .list .name {
+          background-color: #222;
+          color: white;
+}
+
+.videos .holder .list .preview {
+          background-color: #222;
+}
+
+.videos .holder .list .preview .info {
+          background-color: #222;
+          color: #333;
+}
+
+.stats,
+.stats h2,
+.stats .container, 
+.stats .container .box {
+          background-color: #222;
+          color: white;
+}
+
+.stats .container {
+          background-color: #222;
+          color: white;
+}
+
+.stats .container .box {
+          background-color: #222;
+          color: white;
+}
+
+.services,
+.services .box {
+          background-color: #222;
+          color: white;
+}
+
+/* End Dark-Light Mode */
