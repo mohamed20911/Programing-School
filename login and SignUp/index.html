@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sign up</title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+	</head>
+	<body>
+			<form method="POST" action="http://127.0.0.1:5500/Elzero%20templates/Template/index.html" onsubmit="return checksubmit()">
+				<h1>SignUp</h1>
+				<div>
+					<h2>SignUp Here</h2>
+					<p>New Username：<input type="text" name="username" value="" id="txtUsername"><span></span></p>
+					<p>New Password：<input type="text" name="studentid" value="" id="txtStudentid"><span></span></p>
+					<p>Your age：<input type="date" name="phone" value="" id="txtPhone"><span></span></p>
+					<p>Your Email：<input type="text" name="email" value="" id="txtEmail"><span></span></p>
+					<input type="reset" name="reset" value="Clear">
+					<input type="submit" name="submit" value="Create" id="submit">
+				</div>
+				<br>
+				<p>hint:</p>
+				<p>User name 6~18 English letters, numbers or underscores, must start with an English letter</p>
+				<p>Password is 8 digits or more cannot start with 0</p>
+			</form>
+	</body>
+</html>
