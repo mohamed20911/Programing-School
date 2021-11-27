@@ -21,8 +21,6 @@
           --secondary-color: #212121;
 }
 
-
-
 html {
           scroll-behavior: smooth;
 }
@@ -481,7 +479,8 @@ ul {
           background-color: white;
           border-radius: 6px;
           overflow: hidden;
-          transition: transform var(--main-transition), box-shadow var(--main-transition);
+          transition: transform var(--main-transition),
+                    box-shadow var(--main-transition);
           transition: transform 1s ease-in-out;
 }
 
@@ -498,7 +497,8 @@ ul {
           background-color: white;
           border-radius: 6px;
           overflow: hidden;
-          transition: transform var(--main-transition), box-shadow var(--main-transition);
+          transition: transform var(--main-transition),
+                    box-shadow var(--main-transition);
 }
 
 .articles .box:hover {
@@ -538,8 +538,8 @@ ul {
           align-items: center;
 }
 
-.articles:hover .box:hover{
-          transform: scale(1.1,1.1);
+.articles:hover .box:hover {
+          transform: scale(1.1, 1.1);
           transform-origin: -1 -1;
           transition: transform 0.2s;
 }
@@ -617,7 +617,8 @@ ul {
 .gallery .box {
           padding: 15px;
           background-color: white;
-          box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 13%), 0px 2px 4px 0px rgb(0 0 0 / 12%);
+          box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 13%),
+                    0px 2px 4px 0px rgb(0 0 0 / 12%);
 }
 
 .gallery .box .image {
@@ -652,6 +653,42 @@ ul {
 }
 
 /* End Gallery */
+
+/* Start Features */
+.features {
+          padding-top: var(--section-padding);
+          padding-bottom: var(--section-padding);
+          background-color: var(--section-background);
+}
+
+.features .container {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+          grid-gap: 20px;
+}
+
+.features .feat {
+          padding: 20px;
+          text-align: center;
+}
+
+.features .feat i {
+          color: var(--main-color);
+}
+
+.features .feat h3 {
+          font-weight: 800;
+          margin: 30px 0;
+}
+
+.features .feat p {
+          line-height: 1.8;
+          color: #777;
+          font-size: 17px;
+}
+
+/* End Features */
+
 /* Start Features */
 .features {
           padding-top: var(--main-padding-top);
@@ -1882,10 +1919,9 @@ ul {
 }
 
 ::-webkit-scrollbar-track {
-          background-color: #EEE;
-          box-shadow: 0 0 #DDD inset;
+          background-color: #eee;
+          box-shadow: 0 0 #ddd inset;
 }
-
 
 ::-webkit-scrollbar-thumb {
           background: rgba(205 92 92 / 50%);
@@ -1924,14 +1960,109 @@ ul {
           right: 30px;
 }
 
-
 /* End Up */
 
-/* Start Animation the box */
+/* Animation the box */
 
 #home {
           text-decoration: none;
           color: white;
 }
 
-/* End Animation the box */
+/* Start iframe */
+
+.gallery .gallery_Iframe {
+          width: 100%;
+          height: 500px;
+}
+
+/* End iframe */
+/* Start Gallery */
+
+.carousel {
+          position: relative;
+          height: 600px;
+          width: 80%;
+          margin: 0 auto;
+}
+
+.carousel_images {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+}
+
+.carousel_track-container {
+          background-color: lightgreen;
+          height: 97%;
+          position: relative;
+          overflow: hidden;
+}
+
+.carousel_track {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          position: relative;
+          height: 100%;
+          transition: transform 250ms ease-in;
+}
+
+.carousel_slide {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: 100%;
+}
+
+.carousel_button {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          background: transparent;
+          border: 0;
+          cursor: pointer;
+}
+
+.carousel_button--left {
+          left: -10px;
+}
+
+.carousel_button--right {
+          right: -50px;
+}
+
+.carousel_button img {
+          width: 20px;
+          margin-top: 250px;
+}
+
+.carousel_nav {
+          display: flex;
+          justify-content: center;
+          padding: 10px 0;
+}
+
+.carousel_indicator {
+          border: 0;
+          border-radius: 50%;
+          width: 15px;
+          height: 15px;
+          background-color: rgba(0, 0, 0, 0.3);
+          margin: 0 12px;
+          cursor: pointer;
+}
+
+.carousel_indicator .current-slide {
+          background-color: rgb(0, 0, 0);
+}
+
+.maintitle1 {
+          margin-top: 100px;
+}
+
+.is-hidden { display: none; }
+
+.carousel_button:hover {
+          background-color: #222;
+}
