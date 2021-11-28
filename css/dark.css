@@ -164,4 +164,32 @@ body {
           color: white;
 }
 
+.portfolio {
+          color: white;
+          background-color: #222;
+}
+
+.portfolio .special-heading {
+          color: #555;
+}
+
+.portfolio .portfolio-content {
+          color: white;
+          background-color: #222;
+}
+
+.portfolio .portfolio-content .card {
+          color: white;
+          background-color: #333;
+}
+
+.portfolio .portfolio-content .card .info h3 {
+          color: #889;
+}
+
+.services .container .box .info p {
+          color: #444;
+          font-weight: 300;
+          line-height: 1.6;
+}
 /* End Dark-Light Mode */

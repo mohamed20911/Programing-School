@@ -185,6 +185,14 @@ ul {
           line-height: 36px;
           text-align: center;
           overflow: hidden;
+          font-size: 13px;
+          margin-right: 100px;
+}
+
+@media (max-width: 767px) {
+          .header .link {
+                    margin-left: 10px;
+          }
 }
 
 .link:before {
@@ -204,6 +212,7 @@ ul {
 
 .link:hover:before {
           transform: translateX(0);
+          font-size: 13px;
 }
 
 .link:hover span {
@@ -352,6 +361,18 @@ ul {
 
 .header .mega-menu .links li a i {
           margin-right: 10px;
+}
+
+.header .imga {
+          width: 110px;
+          height: 90px;
+}
+
+@media (max-width: 767px) {
+          .header .imga {
+                    width: 100px;
+                    margin-left: 270px;
+          }
 }
 
 /* End Header */
@@ -1084,6 +1105,12 @@ ul {
 
 .services .box .info a {
           color: var(--main-color);
+}
+
+.services .container .box .info p {
+          color: #777;
+          font-weight: 300;
+          line-height: 1.6;
 }
 
 /* End Services */
@@ -2048,7 +2075,7 @@ ul {
           border-radius: 50%;
           width: 15px;
           height: 15px;
-          background-color: rgba(0, 0, 0, 0.3);
+          background-color: rgba(224, 210, 210, 0.5);
           margin: 0 12px;
           cursor: pointer;
 }
@@ -2061,8 +2088,346 @@ ul {
           margin-top: 100px;
 }
 
-.is-hidden { display: none; }
+.is-hidden {
+          display: none;
+}
 
 .carousel_button:hover {
           background-color: #222;
 }
+
+/* End Gallery */
+
+/* Start Portfolio */
+
+/* Start Variables */
+
+:root {
+          --main-color2: #10cab7;
+          --secondary-color2: #2c4755;
+          --section-padding2: 60px;
+          --section-background2: #f6f6f6;
+          --main-duration2: 0.5s;
+}
+
+/* End Variables */
+
+/* Start Component */
+
+.special-heading {
+          color: #ebeced;
+          font-size: 100px;
+          text-align: center;
+          font-weight: 800;
+          letter-spacing: -3px;
+          margin: 0;
+}
+
+.special-heading+p {
+          margin: -30px 0 0;
+          font-size: 20px;
+          text-align: center;
+          color: #797979;
+}
+
+@media (max-width: 767px) {
+          .special-heading {
+                    font-size: 60px;
+          }
+
+          .special-heading+p {
+                    margin-top: -20px;
+          }
+}
+
+/* End Component */
+
+.portfolio {
+          padding-top: var(--section-padding2);
+          padding-bottom: var(--section-padding2);
+          background-color: var(--section-background2);
+}
+
+.portfolio .portfolio-content {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+          grid-gap: 30px;
+          margin-top: 80px;
+}
+
+.portfolio .portfolio-content .card {
+          background-color: white;
+}
+
+.portfolio .portfolio-content .card img {
+          max-width: 100%;
+}
+
+.portfolio .portfolio-content .card .info {
+          padding: 20px;
+}
+
+.portfolio .portfolio-content .card .info h3 {
+          margin: 0;
+}
+
+.portfolio .portfolio-content .card .info p {
+          color: #777;
+          line-height: 1.6;
+          margin-bottom: 0;
+}
+
+.portfolio .portfolio-content .card .info h3 a {
+          text-decoration: none;
+          color: black;
+}
+
+.portfolio .portfolio-content .card .info h3 a:hover {
+          padding: 10px;
+          color: white;
+}
+
+.portfolio .portfolio-content .card:hover {
+          transform: scale(1.1, 1.1);
+          transform-origin: -1 -1;
+          transition: transform 0.2s;
+}
+
+/* End Portfolio */
+
+/* Services 2 */
+
+.services {
+          padding-top: var(--section-padding);
+          padding-bottom: var(--section-padding);
+}
+
+.services .services-content {
+          margin-left: 300px;
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+          grid-gap: 30px;
+          margin-top: 100px;
+}
+
+.services .services-content .srv {
+          display: flex;
+          margin-bottom: 40px;
+          width: 700px;
+}
+
+@media (max-width: 767px) {
+          .services .services-content .srv {
+                    flex-direction: column;
+                    text-align: center;
+          }
+}
+
+.services .services-content .srv i {
+          color: var(--main-color);
+          flex-basis: 60px;
+}
+
+.services .services-content .srv .text {
+          flex: 1;
+}
+
+.services .services-content .srv .text h3 {
+          margin: 0 0 20px;
+}
+
+.services .services-content .srv .text p {
+          color: #444;
+          font-weight: 300;
+          line-height: 1.6;
+}
+
+.services .services-content .image {
+          text-align: center;
+          position: relative;
+          background-color: white;
+}
+
+.services .services-content .image img {
+          width: 260px;
+}
+
+@media (max-width: 1199px) {
+          .image-column {
+                    display: none;
+          }
+}
+
+/* Services 2 */
+
+/* Start Nav Bullets */
+.nav-bullets {
+          position: fixed;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 40px;
+          z-index: 1000;
+}
+
+.nav-bullets .bullet {
+          width: 20px;
+          height: 20px;
+          border: 3px solid var(--main-color);
+          margin: 20px auto;
+          border-radius: 50%;
+          cursor: pointer;
+          position: relative;
+}
+
+.nav-bullets .bullet:hover .tooltip {
+          display: block;
+}
+
+.nav-bullets .bullet .tooltip {
+          background-color: var(--main-color);
+          width: 120px;
+          color: #FFF;
+          padding: 8px 10px;
+          position: absolute;
+          right: 32px;
+          top: -10px;
+          text-align: center;
+          cursor: default;
+          pointer-events: none;
+          display: none;
+}
+
+.nav-bullets .bullet .tooltip:before {
+          content: '';
+          border-style: solid;
+          border-width: 10px;
+          border-color: transparent transparent transparent var(--main-color);
+          height: 0;
+          width: 0;
+          position: absolute;
+          right: -20px;
+          top: 50%;
+          transform: translateY(-50%);
+}
+
+/* End Nav Bullets */
+
+/* Start Settings Box */
+.settings-box {
+          position: fixed;
+          left: -200px;
+          top: 0;
+          background-color: #FFF;
+          width: 200px;
+          z-index: 1000;
+          min-height: 100vh;
+          transition: .3s;
+          border: 1px solid #EEE;
+}
+
+.settings-box.open {
+          left: 0;
+}
+
+.settings-box .toggle-settings {
+          position: absolute;
+          right: -30px;
+          top: 100px;
+          background-color: #FFF;
+          text-align: center;
+          cursor: pointer;
+}
+
+.settings-box .toggle-settings .fa-gear {
+          width: 30px;
+          padding: 8px 0;
+}
+
+.settings-box .option-box {
+          padding: 10px;
+          text-align: center;
+          background-color: #EEE;
+          margin: 10px;
+}
+
+.settings-box .option-box h4 {
+          margin: 0;
+          color: #666;
+          font-size: 14px;
+}
+
+.settings-box .option-box .colors-list {
+          list-style: none;
+          text-align: center;
+          padding: 0;
+          margin: 10px 0 0;
+}
+
+.settings-box .option-box .colors-list li {
+          width: 24px;
+          height: 24px;
+          background-color: #333;
+          border-radius: 50%;
+          cursor: pointer;
+          display: inline-block;
+          border: 3px solid #EEE;
+}
+
+.settings-box .option-box .colors-list li.active {
+          border-color: #FFF;
+}
+
+.settings-box .option-box .colors-list li:first-child {
+          background-color: #FF9800;
+}
+
+.settings-box .option-box .colors-list li:nth-child(2) {
+          background-color: #E91E63;
+}
+
+.settings-box .option-box .colors-list li:nth-child(3) {
+          background-color: #009688;
+}
+
+.settings-box .option-box .colors-list li:nth-child(4) {
+          background-color: #03A9F4;
+}
+
+.settings-box .option-box .colors-list li:nth-child(5) {
+          background-color: #4CAF50;
+}
+
+.settings-box .option-box .yes,
+.settings-box .option-box .no {
+          width: 50px;
+          background-color: var(--main-color);
+          color: #FFF;
+          margin-top: 10px;
+          display: inline-block;
+          font-size: 12px;
+          padding: 4px 10px;
+          font-weight: bold;
+          border-radius: 4px;
+          opacity: .5;
+          cursor: pointer;
+}
+
+.settings-box .option-box span.active {
+          opacity: 1;
+}
+
+.settings-box .reset-options {
+          background-color: #F44336;
+          border: none;
+          width: 178px;
+          margin: 10px auto;
+          display: block;
+          color: #FFF;
+          font-weight: bold;
+          padding: 10px;
+          border-radius: 4px;
+          cursor: pointer;
+}
+
+/* End Settings Box */
