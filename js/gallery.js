@@ -97,7 +97,7 @@ dotsNav.addEventListener('click', e => {
           
 });
 
-// Print All Varaibles
-const All_Varaibles = [track, slides, nextButton, prevButton, dotsNav, dots];
+// // Print All Varaibles
+// const All_Varaibles = [track, slides, nextButton, prevButton, dotsNav, dots];
 
-console.log(All_Varaibles);
+// console.log(All_Varaibles);

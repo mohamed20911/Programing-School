@@ -23,6 +23,7 @@
 
 html {
           scroll-behavior: smooth;
+          background-image: url(../images/background.svg);
 }
 
 body {
@@ -1411,6 +1412,7 @@ ul {
 /* End Events */
 /* Start Videos */
 .videos {
+          background-image: url(../images/background.svg);
           scroll-behavior: smooth;
           width: 100%;
           padding-top: var(--main-padding-top);
@@ -1421,7 +1423,7 @@ ul {
           width: 100%;
           display: flex;
           justify-content: center;
-          background-color: var(--section-background);
+          /* background-color: var(--section-background); */
           border: 1px solid #ddd;
 }
 
@@ -1436,14 +1438,14 @@ ul {
           align-items: center;
           height: 100px;
           min-width: 300px;
-          background-color: white;
+          /* background-color: white; */
 }
 
 .videos .holder .list .name {
           display: flex;
           justify-content: space-between;
           padding: 20px;
-          background-color: #f4f4f4;
+          /* background-color: #f4f4f4; */
           font-weight: bold;
           /* color: var(--main-color);*/
 }
@@ -2184,7 +2186,7 @@ ul {
 
 .portfolio .portfolio-content .card .info h3 a:hover {
           padding: 10px;
-          color: white;
+          color: black;
 }
 
 .portfolio .portfolio-content .card:hover {
@@ -2313,121 +2315,220 @@ ul {
 
 /* End Nav Bullets */
 
-/* Start Settings Box */
-.settings-box {
-          position: fixed;
-          left: -200px;
-          top: 0;
-          background-color: #FFF;
-          width: 200px;
-          z-index: 1000;
-          min-height: 100vh;
-          transition: .3s;
-          border: 1px solid #EEE;
+/* Start About Us */
+.about-us {
+          padding-top: 50px;
+          padding-bottom: 50px;
+          display: flex;
 }
 
-.settings-box.open {
-          left: 0;
+@media (max-width: 767px) {
+          .about-us {
+                    display: block;
+                    text-align: center;
+          }
 }
 
-.settings-box .toggle-settings {
-          position: absolute;
-          right: -30px;
-          top: 100px;
-          background-color: #FFF;
-          text-align: center;
-          cursor: pointer;
+.about-us .info-box {
+          flex: 1;
+          padding: 30px;
 }
 
-.settings-box .toggle-settings .fa-gear {
-          width: 30px;
-          padding: 8px 0;
+@media (max-width: 767px) {
+          .about-us .info-box {
+                    padding: 0;
+          }
 }
 
-.settings-box .option-box {
-          padding: 10px;
-          text-align: center;
-          background-color: #EEE;
-          margin: 10px;
+.about-us .info-box h2 {
+          font-weight: bold;
+          font-size: 30px;
+          color: var(--main-color);
+          margin: 0 0 10px;
 }
 
-.settings-box .option-box h4 {
+.about-us .info-box p {
+          line-height: 1.8;
+          color: #767676;
           margin: 0;
-          color: #666;
-          font-size: 14px;
 }
 
-.settings-box .option-box .colors-list {
-          list-style: none;
+.about-us .info-box a {
+          line-height: 1.8;
+          color: red;
+          margin: 0;
+          text-decoration: none;
+}
+
+.about-us .info-box a:hover {
+          color: black;
+          padding-right: 20px;
+}
+
+.about-us .image-box {
+          flex: 1;
           text-align: center;
-          padding: 0;
+}
+
+.about-us .image-box img {
+          width: 250px;
+}
+
+/* End About Us */
+
+/* start background */
+#code {
+          border: 1px solid #000;
+          background-color: rgba(255, 255, 255, .9);
+          font-family: monospace;
+          margin: 1em;
+          padding: .5em;
+          word-break: break-all;
+}
+
+svg {
+          display: none;
+}
+
+/* End background */
+
+/* Start Articles */
+.articles {
+          padding-top: var(--main-padding-top);
+          padding-bottom: var(--main-padding-bottom);
+          position: relative;
+          transform: translate(0) rotate(360deg);
+}
+
+.articles .container {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+          gap: 40px;
+}
+
+.articles .box {
+          box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+          background-color: white;
+          border-radius: 6px;
+          overflow: hidden;
+          transition: transform var(--main-transition),
+                    box-shadow var(--main-transition);
+          transition: transform 1s ease-in-out;
+}
+
+.articles .box .google {
+          margin-left: 50px;
+          margin-top: 20px;
+          align-items: center;
+          width: 60%;
+          height: fit-content;
+}
+
+.articles .box1 {
+          box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+          background-color: white;
+          border-radius: 6px;
+          overflow: hidden;
+          transition: transform var(--main-transition),
+                    box-shadow var(--main-transition);
+}
+
+.articles .box:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+}
+
+.articles .box1:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+}
+
+.articles .box1 img {
+          width: 100%;
+          max-width: 100%;
+}
+
+.articles .box1 .content {
+          padding: 20px;
+}
+
+.articles .box1 .content h3 {
+          margin: 0;
+}
+
+.articles .box1 .content p {
           margin: 10px 0 0;
+          line-height: 1.5;
+          color: #777;
 }
 
-.settings-box .option-box .colors-list li {
-          width: 24px;
-          height: 24px;
-          background-color: #333;
-          border-radius: 50%;
-          cursor: pointer;
-          display: inline-block;
-          border: 3px solid #EEE;
+.articles .box1 .info {
+          padding: 20px;
+          border-top: 1px solid #e6e6e7;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
 }
 
-.settings-box .option-box .colors-list li.active {
-          border-color: #FFF;
+.articles:hover .box:hover {
+          transform: scale(1.1, 1.1);
+          transform-origin: -1 -1;
+          transition: transform 0.2s;
 }
 
-.settings-box .option-box .colors-list li:first-child {
-          background-color: #FF9800;
-}
-
-.settings-box .option-box .colors-list li:nth-child(2) {
-          background-color: #E91E63;
-}
-
-.settings-box .option-box .colors-list li:nth-child(3) {
-          background-color: #009688;
-}
-
-.settings-box .option-box .colors-list li:nth-child(4) {
-          background-color: #03A9F4;
-}
-
-.settings-box .option-box .colors-list li:nth-child(5) {
-          background-color: #4CAF50;
-}
-
-.settings-box .option-box .yes,
-.settings-box .option-box .no {
-          width: 50px;
-          background-color: var(--main-color);
-          color: #FFF;
-          margin-top: 10px;
-          display: inline-block;
-          font-size: 12px;
-          padding: 4px 10px;
+.articles .box1 .info a {
+          color: var(--main-color);
           font-weight: bold;
-          border-radius: 4px;
-          opacity: .5;
-          cursor: pointer;
 }
 
-.settings-box .option-box span.active {
-          opacity: 1;
+.articles .box1 .info i {
+          color: var(--main-color);
 }
 
-.settings-box .reset-options {
-          background-color: #F44336;
-          border: none;
-          width: 178px;
-          margin: 10px auto;
-          display: block;
-          color: #FFF;
+.articles .box1:hover .info i {
+          animation: moving-arrow 0.6s linear infinite;
+}
+
+/* End of box1 */
+
+.articles .box img {
+          width: 100%;
+          max-width: 100%;
+}
+
+.articles .box .content {
+          padding: 20px;
+}
+
+.articles .box .content h3 {
+          margin: 0;
+}
+
+.articles .box .content p {
+          margin: 10px 0 0;
+          line-height: 1.5;
+          color: #777;
+}
+
+.Youtube_channel .box .info {
+          padding: 20px;
+          border-top: 1px solid #e6e6e7;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+}
+
+.Youtube_channel .box .info a {
+          color: var(--main-color);
           font-weight: bold;
-          padding: 10px;
-          border-radius: 4px;
-          cursor: pointer;
 }
 
-/* End Settings Box */
+.Youtube_channel .box .info i {
+          color: var(--main-color);
+}
+
+.Youtube_channel .box:hover .info i {
+          animation: moving-arrow 0.6s linear infinite;
+}
+
+/* End Youtube */

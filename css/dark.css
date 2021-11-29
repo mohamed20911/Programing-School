@@ -192,4 +192,10 @@ body {
           font-weight: 300;
           line-height: 1.6;
 }
+
+.portfolio .portfolio-content .card .info h3 a:hover {
+          padding: 10px;
+          color: white;
+}
+
 /* End Dark-Light Mode */
