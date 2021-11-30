@@ -198,4 +198,9 @@ body {
           color: white;
 }
 
+.article .box{
+          color: black;
+          background-color: #444;
+}
+
 /* End Dark-Light Mode */
