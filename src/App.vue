@@ -1,13 +1,14 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
+    <h1>Hello To Programing-School Vue</h1>
     <router-view/>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'Programing-School'
 }
 </script>
 
