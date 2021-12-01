@@ -49,7 +49,7 @@ ul {
 
 /* Small */
 @media (min-width: 768px) {
-          .container {
+          .container{
                     width: 750px;
           }
 }
@@ -78,6 +78,16 @@ ul {
           position: relative;
           z-index: 1;
           transition: var(--main-transition);
+          color: #FFFFFF;
+          background: #232323;
+          text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+          color: #FFFFFF;
+          background: #232323;
+          color: #FFFFFF;
+          background: #333333;
+          text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+          color: #FFFFFF;
+          background: #333333;
 }
 
 .main-title::before,
@@ -2283,16 +2293,19 @@ ul {
                     right: 10;
           }
 }
+
 @media (max-width: 425px) {
           .nav-bullets {
                     right: 10;
           }
 }
+
 @media (max-width: 375px) {
           .nav-bullets {
                     right: 10;
           }
 }
+
 @media (max-width: 768px) {
           .nav-bullets {
                     right: 10;
@@ -2549,3 +2562,22 @@ ul {
 }
 
 /* End Youtube */
+/* demo text */
+#demotext {
+          color: #FFFFFF;
+          background: #333333;
+          text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+          color: #FFFFFF;
+          background: #333333;
+}
+
+/* Start login icon */
+
+.header .container ul .login {
+          color: white;
+          top: 0;
+}
+
+.header .container ul .login:hover {
+          color: #03a9f4;
+}
