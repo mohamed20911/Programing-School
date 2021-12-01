@@ -49,7 +49,7 @@ ul {
 
 /* Small */
 @media (min-width: 768px) {
-          .container{
+          .container {
                     width: 750px;
           }
 }
@@ -2571,13 +2571,140 @@ ul {
           background: #333333;
 }
 
-/* Start login icon */
-
-.header .container ul .login {
-          color: white;
-          top: 0;
+/* Start Landings */
+/* Variables */
+:root {
+          --text-main: hsl(229, 23%, 23%);
+          --text-secondary: hsl(227, 10%, 46%);
+          --cyan: hsl(185, 75%, 39%);
+          --drk-gray: hsl(0, 0%, 59%);
 }
 
-.header .container ul .login:hover {
-          color: #03a9f4;
+/* * {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
 }
+
+body {
+          background: url('../img/bg-pattern-top.svg') no-repeat bottom 25vh right 50vw / cover,
+                    url('../img/bg-pattern-bottom.svg') no-repeat 35vw 50vh / cover,
+                    var(--cyan);
+          color: var(--text-main);
+          font-weight: 400;
+          font-family: 'Kumbh Sans', sans-serif;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          height: 100vh;
+} */
+
+.profile {
+          margin: 0;
+          padding: 0;
+          text-align: center;
+          margin-left: 500px;
+          margin-bottom: 3rem;
+          width: 90%;
+          max-width: 22rem;
+          border-radius: 15px;
+          overflow: hidden;
+          box-shadow: 0 15px 20px rgba(0, 0, 0, .15);
+}
+
+.profile__bg {
+          display: block;
+}
+
+.profile__info {
+          position: relative;
+          text-align: center;
+          background: hsl(0, 0%, 100%);
+          color: black;
+}
+
+.user__img {
+          border-radius: 50%;
+          border: 5px solid hsl(0, 0%, 100%);
+          position: absolute;
+          left: 50%;
+          top: -53px;
+          transform: translate(-50%, 0);
+          width: 30%;
+}
+
+.user__info {
+          padding-top: 4.5rem;
+          padding-bottom: 1.5rem;
+          border-bottom: 1px solid hsl(0, 0%, 88%);
+}
+
+h3, h4 {
+          font-size: 1.125rem;
+          font-weight: 700;
+}
+
+.user__name {
+          margin-bottom: 5px;
+}
+
+.user__age {
+          font-weight: 400;
+          margin-left: 5px;
+          color: var(--drk-gray);
+}
+
+.user__city {
+          font-size: .9rem;
+          color: var(--text-secondary);
+          letter-spacing: .5px;
+}
+
+.user__stats {
+          display: flex;
+          justify-content: space-evenly;
+          padding: 1.5rem 0;
+}
+
+.user__stats li {
+          list-style: none;
+}
+
+.user__stats h4 {
+          margin-bottom: 5px;
+}
+
+.user__stats p {
+          color: var(--text-secondary);
+          font-size: 0.625rem;
+          letter-spacing: 1px;
+}
+
+.attribution {
+          text-align: center;
+          padding: 0 2rem 1rem;
+}
+
+.attribution a:link,
+.attribution a:visited {
+          color: hsl(245, 75%, 52%);
+          transition: 0.2s;
+          text-decoration: none;
+          padding-bottom: 2px;
+          box-shadow: 0 2px 0 0 hsl(245, 75%, 52%);
+          font-weight: 700;
+}
+
+.attribution a:active,
+.attribution a:hover {
+          color: hsl(245, 69%, 47%);
+          box-shadow: none;
+}
+
+.attribution span {
+          color: hsl(0, 100%, 47%);
+          font-size: 1.25rem;
+}
+
+/* End Landings */
