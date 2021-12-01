@@ -691,36 +691,151 @@ ul {
 /* End Gallery */
 
 /* Start Features */
+
 .features {
-          padding-top: var(--section-padding);
-          padding-bottom: var(--section-padding);
-          background-color: var(--section-background);
+          position: relative;
+          padding-top: var(--main-padding);
+          padding-bottom: var(--main-padding);
+          color: white;
 }
 
 .features .container {
           display: grid;
           grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-          grid-gap: 20px;
+          gap: 40px;
 }
 
-.features .feat {
-          padding: 20px;
+.features .box {
           text-align: center;
+          border: 1px solid rgb(62, 68, 70);
 }
 
-.features .feat i {
-          color: var(--main-color);
+.features .img-holder {
+          position: relative;
+          overflow: hidden;
 }
 
-.features .feat h3 {
-          font-weight: 800;
-          margin: 30px 0;
+.features .img-holder::before {
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
 }
 
-.features .feat p {
-          line-height: 1.8;
-          color: #777;
-          font-size: 17px;
+.features .img-holder::after {
+          position: absolute;
+          content: "";
+          bottom: 0;
+          right: 0;
+          border-width: 0px 0px 170px 500px;
+          border-style: solid;
+          transition: var(--main-transition);
+          border-color: transparent transparent rgb(48, 52, 54);
+}
+
+.features .box:hover .img-holder::after {
+          border-width: 170px 500px 170px 0;
+          transition: var(--main-transition);
+}
+
+.features img {
+          width: 100%;
+}
+
+.features .box h2 {
+          font-size: 40px;
+          color: white;
+          position: relative;
+          width: fit-content;
+          margin: 10px auto;
+}
+
+.features .box h2::after {
+          content: "";
+          position: absolute;
+          width: 80%;
+          height: 3px;
+          top: 120%;
+          left: 50%;
+          transform: translateX(-50%);
+}
+
+.features .box p {
+          font-size: 20px;
+          padding: 10px;
+          font-weight: bold;
+          line-height: 1.6;
+          color: #bababa;
+}
+
+.features .box a {
+          border: 3px solid transparent;
+          display: block;
+          padding: 8px 30px;
+          width: fit-content;
+          margin: 0 auto 30px;
+          font-size: 22px;
+          font-weight: bold;
+          border-radius: 7px;
+}
+
+.features .quality .img-holder::before {
+          background-color: rgb(244 64 54 / 20%);
+}
+
+.features .quality h2::after {
+          background-color: #f44036;
+}
+
+.features .quality a {
+          border-color: #f44036;
+          color: #f44036;
+          background: linear-gradient(to right, #f44036 50%, rgb(24, 26, 27) 50%);
+          background-position: right bottom;
+          background-size: 200% 100%;
+          transition: var(--main-transition);
+}
+
+.features .time .img-holder::before {
+          background-color: rgb(0 150 136 / 20%);
+}
+
+.features .time h2::after {
+          background-color: #009688;
+}
+
+.features .time a {
+          border-color: #009688;
+          color: #009688;
+          background: linear-gradient(to right, #009688 50%, rgb(24, 26, 27) 50%);
+          background-position: right bottom;
+          background-size: 200% 100%;
+          transition: var(--main-transition);
+}
+
+.features .passion .img-holder::before {
+          background-color: rgb(3 169 244 / 20%);
+}
+
+.features .passion h2::after {
+          background-color: #03a9f4;
+}
+
+.features .passion a {
+          border-color: #03a9f4;
+          color: #03a9f4;
+          background: linear-gradient(to right, #03a9f4 50%, rgb(24, 26, 27) 50%);
+          background-position: right bottom;
+          background-size: 200% 100%;
+          transition: var(--main-transition);
+}
+
+.features .box:hover a {
+          background-position: left bottom;
+          color: white;
+          transition: var(--main-transition);
 }
 
 /* End Features */
@@ -1986,7 +2101,7 @@ ul {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-          background: #777;
+          background: #222;
           cursor: pointer;
 }
 
@@ -2810,4 +2925,8 @@ section.success {
 
 form .row:first-child .floating-label-form-group {
           border-top: 1px solid #eeeeee;
+}
+
+.fill span {
+          color: forestgreen;
 }
