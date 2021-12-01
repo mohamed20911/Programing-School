@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
+    <img src="../images/channels4_profile.jpg">
     <h1>Hello To Programing-School Vue</h1>
     <router-view/>
   </div>
