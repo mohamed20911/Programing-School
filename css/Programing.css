@@ -2583,6 +2583,11 @@ ul {
           height: fit-content;
 }
 
+.articles .box:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+}
+
 .article .box1 {
           box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
           background-color: white;
