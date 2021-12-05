@@ -2943,3 +2943,54 @@ form .row:first-child .floating-label-form-group {
 .fill span {
           color: forestgreen;
 }
+
+/* Start Grid System */
+@media (min-width: 576px) {
+
+  /* Small Devices => Landscape Phones */
+  .container {
+    max-width: 540px;
+  }
+
+  .nav-bullets {
+          right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+
+  /* Medium Devices => Tablets */
+  .container {
+    max-width: 720px;
+  }
+
+  .nav-bullets {
+          right: 0;
+  }
+}
+
+@media (min-width: 992px) {
+
+  /* Desktops */
+  .container {
+    max-width: 960px;
+  }
+  
+  .nav-bullets {
+          right: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  /* Large Screens */
+  .container {
+    max-width: 1140px;
+  }
+  
+  .nav-bullets {
+          right: 0;
+  }
+}
+
+/* End Grid System */
